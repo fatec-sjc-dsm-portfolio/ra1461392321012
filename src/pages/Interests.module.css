@@ -1,0 +1,164 @@
+.main {
+  padding-top: 64px;
+  padding-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+}
+
+.eyebrow {
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 14px;
+}
+
+.accent { color: var(--accent); }
+
+/* ── Intro ── */
+
+.intro {
+  display: flex;
+  align-items: center;
+  gap: 56px;
+}
+
+.introText {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.title {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.2;
+  color: var(--text);
+}
+
+.bio {
+  font-size: 0.92rem;
+  color: var(--text-sub);
+  line-height: 1.8;
+}
+
+.introImg {
+  width: 260px;
+  border-radius: 14px;
+  border: 1px solid var(--border-card);
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+/* ── Section ── */
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.sectionTitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--text);
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+/* ── Formations ── */
+
+.formations {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.formCard {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius);
+  padding: 18px 22px;
+  transition: background 0.2s;
+}
+
+.formCard:hover { background: var(--bg-card-h); }
+
+.formStatus {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  background: rgba(255,255,255,0.05);
+  border: 1px solid var(--border-card);
+  border-radius: 5px;
+  padding: 2px 8px;
+  flex-shrink: 0;
+}
+
+.formStatus.active {
+  color: var(--accent);
+  background: var(--accent-dim);
+  border-color: rgba(34, 212, 253, 0.2);
+}
+
+.formName {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text);
+  flex: 1;
+}
+
+.formInst {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  flex-shrink: 0;
+}
+
+/* ── Hobbies ── */
+
+.hobby {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.hobbyReverse { flex-direction: row-reverse; }
+
+.hobbyImg {
+  width: 220px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid var(--border-card);
+  flex-shrink: 0;
+}
+
+.hobbyText {
+  font-size: 0.9rem;
+  color: var(--text-sub);
+  line-height: 1.8;
+}
+
+/* ── Responsive ── */
+
+@media (max-width: 700px) {
+  .intro { flex-direction: column; gap: 32px; }
+  .introImg { width: 100%; }
+
+  .hobby,
+  .hobbyReverse { flex-direction: column; gap: 20px; }
+  .hobbyImg { width: 100%; height: 200px; }
+
+  .formCard { flex-wrap: wrap; gap: 8px; }
+  .formInst { width: 100%; }
+}

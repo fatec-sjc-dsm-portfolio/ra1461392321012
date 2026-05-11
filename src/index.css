@@ -1,0 +1,38 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg:          #0c0c0c;
+  --bg-card:     #111111;
+  --bg-card-h:   #161616;
+  --accent:      #22D4FD;
+  --accent-dim:  rgba(34, 212, 253, 0.12);
+  --accent-glow: rgba(34, 212, 253, 0.06);
+  --text:        #e2e2e2;
+  --text-muted:  #555;
+  --text-sub:    #888;
+  --border:      rgba(255, 255, 255, 0.055);
+  --border-card: rgba(255, 255, 255, 0.07);
+  --radius:      12px;
+  --font:        'Inter', system-ui, sans-serif;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
