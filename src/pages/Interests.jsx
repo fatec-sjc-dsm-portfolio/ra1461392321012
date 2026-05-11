@@ -1,5 +1,7 @@
 import styles from './Interests.module.css'
 
+const base = import.meta.env.BASE_URL
+
 const formations = [
   { status: 'Concluído', name: 'Ensino Médio', institution: 'ETEC Machado de Assis' },
   { status: 'Concluído', name: 'Técnico em Informática', institution: 'ETEC Machado de Assis' },
@@ -21,7 +23,7 @@ export default function Interests() {
             curiosidade de entender como os jogos eram desenvolvidos.
           </p>
         </div>
-        <img src="/img/fatec.jpg" alt="FATEC SJC" className={styles.introImg} />
+        <img src={`${base}img/fatec.jpg`} alt="FATEC SJC" className={styles.introImg} />
       </section>
 
       <section className={styles.section}>
@@ -42,7 +44,7 @@ export default function Interests() {
       <section className={styles.section}>
         <h2 className={styles.sectionTitle}>Hobbies</h2>
         <div className={styles.hobby}>
-          <img src="/img/basquete.jpg" alt="Basquete" className={styles.hobbyImg} />
+          <img src={`${base}img/basquete.jpg`} alt="Basquete" className={styles.hobbyImg} />
           <p className={styles.hobbyText}>
             Além da paixão por video games, tenho outros hobbies — gosto muito de jogar basquete e de fazer
             musculação. Por 5 anos joguei em um time do projeto social Gotas de Cidadania em Caçapava (SP),
@@ -55,7 +57,7 @@ export default function Interests() {
             maneira de aprender sobre hábitos e culturas de diferentes lugares, experimentar comidas novas,
             ver outras paisagens e descansar do dia a dia.
           </p>
-          <img src="/img/praia.jpg" alt="Viagem" className={styles.hobbyImg} />
+          <img src={`${base}img/praia.jpg`} alt="Viagem" className={styles.hobbyImg} />
         </div>
       </section>
 

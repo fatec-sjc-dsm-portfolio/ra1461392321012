@@ -1,9 +1,11 @@
 import { Link } from 'react-router-dom'
 import styles from './Home.module.css'
 
+const base = import.meta.env.BASE_URL
+
 const socials = [
-  { label: 'GitHub', href: 'https://github.com/Karnas01', icon: '/img/github.png' },
-  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/arthur-karnas-da-rocha-b90433271/', icon: '/img/linkedin.png' },
+  { label: 'GitHub', href: 'https://github.com/Karnas01', icon: `${base}img/github.png` },
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/arthur-karnas-da-rocha-b90433271/', icon: `${base}img/linkedin.png` },
 ]
 
 export default function Home() {
@@ -32,7 +34,7 @@ export default function Home() {
         </div>
       </section>
       <div className={styles.imageWrap}>
-        <img src="/img/Imagem.png" alt="Arthur Karnas" className={styles.photo} />
+        <img src={`${base}img/Imagem.png`} alt="Arthur Karnas" className={styles.photo} />
       </div>
     </main>
   )
