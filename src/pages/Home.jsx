@@ -14,11 +14,11 @@ export default function Home() {
       <section className={styles.content}>
         <p className={styles.eyebrow}>Olá, mundo</p>
         <h1 className={styles.title}>
-          Sou <span className={styles.accent}>Arthur</span>, estudante de programação
+          Sou <span className={styles.accent}>Arthur</span>, analista de monitoramento e programador
         </h1>
         <p className={styles.bio}>
-          Estou sempre em busca de oportunidades para aprender e me desenvolver.
-          Cursando Desenvolvimento de Software Multiplataforma na FATEC SJC.
+          Garantindo uptime e integridade pro seu sistema. Desenvolvendo e construindo
+          suas ideias. Cursando Desenvolvimento de Software Multiplataforma na FATEC SJC.
         </p>
         <div className={styles.actions}>
           <Link to="/projetos" className={styles.btnPrimary}>Ver projetos</Link>

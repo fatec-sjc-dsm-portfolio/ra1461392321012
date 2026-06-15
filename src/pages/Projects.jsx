@@ -8,7 +8,7 @@ export default function Projects() {
       <div className={styles.hero}>
         <p className={styles.eyebrow}>Aprendizagem por Projetos Integrados</p>
         <h1 className={styles.title}>Projetos <span className={styles.accent}>Acadêmicos</span></h1>
-        <p className={styles.sub}>FATEC São José dos Campos &middot; 2023–2024</p>
+        <p className={styles.sub}>6 semestres &middot; FATEC São José dos Campos &middot; 2023–2026</p>
       </div>
       <div className={styles.list}>
         {projects.map(p => <ProjectCard key={p.api} {...p} />)}
